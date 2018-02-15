@@ -13,7 +13,7 @@ export default function runSnake(canvasContainer) {
     y: settings.startPositionY
   }];
   let snakeSize = settings.startSize;
-  let fruit = newFruit(tileCount);
+  let fruit = newFruit(tileCount, snakeTrail);
   let { directionX, directionY } = settings;
 
   canvasContainer.width = settings.boardSize;
@@ -30,7 +30,7 @@ export default function runSnake(canvasContainer) {
 
     if (newHeadPosition.x === fruit.xValue && newHeadPosition.y === fruit.yValue) {
       snakeSize++;
-      fruit = newFruit(tileCount);
+      fruit = newFruit(tileCount, snakeTrail);
     }
 
     while (snakeTrail.length > snakeSize) {
