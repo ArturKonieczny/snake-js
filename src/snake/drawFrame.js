@@ -1,3 +1,10 @@
+/**
+ * Draws a single frame.
+ * @param  {Object} context    Canvas context.
+ * @param  {Array} snakeTrail  List of snakes body tiles.
+ * @param  {Object} fruit      Fruit coords and color.
+ * @param  {Object} settings   Settings object. See settings.js.
+ */
 export default function drawFrame(context, snakeTrail, fruit, settings) {
   const { tileSize, boardSize, bgColor, snakeColor } = settings;
   context.fillStyle = bgColor;

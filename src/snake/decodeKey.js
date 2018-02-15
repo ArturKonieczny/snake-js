@@ -1,3 +1,9 @@
+/**
+ * Translate the pressed key into movement direction.
+ * @param  {String} key           Pressed key code.
+ * @param  {Object} prevDirection Current movement direction.
+ * @return {Object}               Returns new dirrection or prev direction if its invalid.
+ */
 export default function decodeKey(key, prevDirection) {
   const keyMap = {
     '37': {

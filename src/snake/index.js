@@ -5,6 +5,10 @@ import drawFrame from './drawFrame';
 import checkBounds from './checkBounds';
 import moveSnake from './moveSnake';
 
+/**
+ * Runs the game
+ * @param  {HTML node} canvasContainer Canvas node
+ */
 export default function runSnake(canvasContainer) {
   const tileCount = settings.boardSize / settings.tileSize;
   const context = canvasContainer.getContext("2d");

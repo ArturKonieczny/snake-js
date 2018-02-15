@@ -1,3 +1,9 @@
+/**
+ * Checks the board bounds and wraps snake on the other side.
+ * @param  {Object} newHeadPosition Tile coords of snakes head.
+ * @param  {Number} tileCount       Number of tiles on board axis (total tiles = tileCount^2)
+ * @return {Object}                 New head coords.
+ */
 export default function checkBounds(newHeadPosition, tileCount) {
   let { x, y } = newHeadPosition;
 
@@ -17,5 +23,5 @@ export default function checkBounds(newHeadPosition, tileCount) {
     y = tileCount - 1;
   }
 
-  return { x, y};
+  return { x, y };
 }

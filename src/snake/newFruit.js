@@ -5,6 +5,12 @@ const fruitColors = [
   '#551A8B'
 ];
 
+/**
+ * Place new fruit on the board.
+ * @param  {Number} tileCount    Number of tiles on board axis (total tiles = tileCount^2)
+ * @param  {Array}  snakeTrail   List of snakes body tiles.
+ * @return {Object}              New fruit coords and color.
+ */
 export default function fewFruit(tileCount, snakeTrail) {
   const emptyTiles = [];
   for (let xCoord = 0; xCoord < tileCount; xCoord++) {

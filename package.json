@@ -1,5 +1,5 @@
 {
-  "name": "Name-goes-here",
+  "name": "snake-js",
   "version": "1.0.0",
   "description": "Snake game",
   "main": "src/index.js",
